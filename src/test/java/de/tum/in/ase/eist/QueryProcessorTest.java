@@ -38,4 +38,11 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void testCanAddition() {
+		String actual = queryProcessor.process("794c9320: what is 3 plus 8");
+		if (!actual.contains("11")) {
+			fail("The QueryProcessor fails to add numbers");
+		}
+	}
 }
