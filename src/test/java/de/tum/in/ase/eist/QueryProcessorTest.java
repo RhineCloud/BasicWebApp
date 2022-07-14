@@ -33,7 +33,7 @@ class QueryProcessorTest {
 	@Test
 	void testKnowsName() {
 		String actual = queryProcessor.process("name");
-		if (!actual.contains("tum-eist-22-yl-basicwebapp")) {
+		if (!actual.contains("Yin")) {
 			fail("The QueryProcessor does not know about the name.");
 		}
 	}
