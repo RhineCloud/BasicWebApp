@@ -45,4 +45,12 @@ class QueryProcessorTest {
 			fail("The QueryProcessor fails to add numbers");
 		}
 	}
+
+	@Test
+	void testLargestNumber() {
+		String actual = queryProcessor.process("d22cc7d0: which of the following numbers is the largest: 37, 6, 160, 468");
+		if (!actual.contains("468")) {
+			fail("The QueryProcessor fails to find the largest number.");
+		}
+	}
 }
